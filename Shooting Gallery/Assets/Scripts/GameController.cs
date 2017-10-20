@@ -14,6 +14,10 @@ public class GameController : MonoBehaviour {
 	public Text ScoreText;
 	public Text HighScoreText;
 
+	public static float waitSeconds;
+	public static int minTargets = 1;
+	public static int maxTargets = 4 ;
+
 	public Texture2D cursorTexture;
 	private Vector2 cursorHotspot;
 
@@ -79,9 +83,9 @@ public class GameController : MonoBehaviour {
 
 	//runs its self over and over until it is stopped, needs to be started
 	IEnumerator SpawnTargets() {
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (waitSeconds);
 		while(true) {
-			int numOfTargets = Random.Range (1, 4);
+			int numOfTargets = Random.Range (minTargets, maxTargets);
 			for (int i = 0; i < numOfTargets; i++) {
 				SpawnTarget ();
 			}

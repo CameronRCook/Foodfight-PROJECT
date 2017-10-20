@@ -10,7 +10,7 @@ public class TargetBehavior : MonoBehaviour {
 	private Vector3 originalPos;
 
 
-	public float moveSpeed = 1.0f; //Speed in the X axis 
+	public static float moveSpeed = 1.0f; //Speed in the X axis 
 	public float frequency = 5.0f; //Speed of the Sine movement
 	public float magnitude = 0.1f; //Size of the Sine movement
 
@@ -92,4 +92,5 @@ public class TargetBehavior : MonoBehaviour {
 
 		StartCoroutine (HideTarget ());
 	}
+		
 }
