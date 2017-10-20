@@ -32,5 +32,18 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+<<<<<<< HEAD
 Shooting Gallery/Temp/UnityTempFile-b78bf65ea41704e458107ddcd846aa67
+Shooting Gallery/Library/assetDatabase3
+=======
+Shooting Gallery/Library/assetDatabase3
+Shooting Gallery/Library/assetDatabase3
+Shooting Gallery/Library/CurrentMaximizeLayout.dwlt
+Shooting Gallery/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+Shooting Gallery/Temp/UnityTempFile-b78bf65ea41704e458107ddcd846aa67
+Shooting Gallery/Library/EditorInstance.json
+Shooting Gallery/Temp/UnityLockfile
+>>>>>>> master
+Shooting Gallery/Library/CurrentMaximizeLayout.dwlt
+Shooting Gallery/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
 Shooting Gallery/Library/assetDatabase3
