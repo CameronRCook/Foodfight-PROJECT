@@ -9731,7 +9731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ad829b7534e4258b7bd4219bb5f406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 50
+  timeLeft: 60
   timeText: {fileID: 1884862062}
   ScoreText: {fileID: 17019911}
   HighScoreText: {fileID: 978366517}

@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour {
 
 	public static GameController _instance;
 
-	public float timeLeft = 50;
+	public float timeLeft = 50	;
 	public Text timeText;
 
 	private int score;
@@ -62,12 +62,14 @@ public class GameController : MonoBehaviour {
 
 	void tweenUpdate (float newValue) {
 		timeLeft = newValue;
-		if(timeLeft > 10) {
+		if (timeLeft > 10) {
 			timeText.text = timeLeft.ToString ("#");
 
-		} else {
+		} else if (timeLeft <= 10 && timeLeft > 1) {
 			timeText.color = Color.red;
 			timeText.text = timeLeft.ToString ("#.0");
+		} else {
+			timeText.text = timeLeft.ToString ("0.#");
 		}
 	}
 		
