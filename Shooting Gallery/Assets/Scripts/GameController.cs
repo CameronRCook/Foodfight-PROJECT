@@ -100,4 +100,9 @@ public class GameController : MonoBehaviour {
 		RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction);
 		Debug.DrawLine (ray.origin, hit.point);
 	}
+
+	public void IncreaseTime() 
+	{
+		timeLeft += 5;
+	}
 }
