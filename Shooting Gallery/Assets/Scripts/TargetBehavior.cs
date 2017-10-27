@@ -37,7 +37,7 @@ public class TargetBehavior : MonoBehaviour {
 	}
 		
 	//The object must have a collider for the following to work.
-	void OnMouseDown(){
+	void OnMouseDown() {
 		if(!beenHit && activated) {
 			GameController._instance.IncreaseScore ();
 			beenHit = true;

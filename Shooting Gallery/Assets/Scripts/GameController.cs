@@ -10,6 +10,12 @@ public class GameController : MonoBehaviour {
 	public float timeLeft = 50;
 	public Text timeText;
 
+	public int ammo = 16;
+	public Text AmmoText;
+
+	public int pizzaSize;
+	public int pizzaCost = 10;
+
 	private int score;
 	public Text ScoreText;
 	public Text HighScoreText;
@@ -20,6 +26,10 @@ public class GameController : MonoBehaviour {
 
 	public Texture2D cursorTexture;
 	private Vector2 cursorHotspot;
+
+	private bool live = false;
+
+	public GameObject reloadButton;
 
 	[HideInInspector]
 	public List<TargetBehavior> targets = new List<TargetBehavior> ();
@@ -38,10 +48,13 @@ public class GameController : MonoBehaviour {
 			"onupdatetarget", gameObject, 
 			"onupdate", "tweenUpdate", 
 			"oncomplete", "GameComplete"));
-		
+
+
 		StartCoroutine ("SpawnTargets");
+		live = true;
 
 		HighScoreText.text = "High Score: " + PlayerPrefs.GetInt ("highScore").ToString ();
+		AmmoText.text = "Slices Left: " + ammo.ToString ();
 		score = 0;
 
 		cursorHotspot = new Vector2 (cursorTexture.width / 2, cursorTexture.height / 2);
@@ -58,6 +71,27 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	public void DecreaseAmmo() {
+		ammo -= 1;
+		AmmoText.text = "Slices Left: " + ammo.ToString ();
+
+		if(ammo == 0) {
+			if (score >= pizzaCost) {
+				reloadButton.SetActive (true);
+				Time.timeScale = 0.0f;
+			} else {
+				Time.timeScale - 0.0f;
+			}
+		}
+	}
+
+	public void ReloadAmmo() {
+		ammo += pizzaSize;
+		AmmoText.text = "Slices Left: " + ammo.ToString ();
+		reloadButton.SetActive (false);
+		Time.timeScale = 1.0f;
+	}
+
 	void GameComplete () {
 		StopCoroutine ("SpawnTargets");
 		timeText.color = Color.black;
@@ -68,7 +102,6 @@ public class GameController : MonoBehaviour {
 		timeLeft = newValue;
 		if(timeLeft > 10) {
 			timeText.text = timeLeft.ToString ("#");
-
 		} else {
 			timeText.color = Color.red;
 			timeText.text = timeLeft.ToString ("#.0");
@@ -99,5 +132,8 @@ public class GameController : MonoBehaviour {
 		Ray ray = Camera.main.ScreenPointToRay (currentMouse);
 		RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction);
 		Debug.DrawLine (ray.origin, hit.point);
+		if(Input.GetMouseButtonDown(0) && live && ammo >= 1) {
+			DecreaseAmmo ();
+		}
 	}
 }

@@ -99,6 +99,7 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 'Assets/_Plugins/Pixelplacement/iTween/iTween.cs'
+'Assets/Scripts/DifficultyController.cs'
 'Assets/Scripts/GameController.cs'
 'Assets/Scripts/SceneController.cs'
 'Assets/Scripts/TargetBehavior.cs'
