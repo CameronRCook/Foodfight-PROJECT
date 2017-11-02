@@ -53,12 +53,22 @@ public class TargetBehavior : MonoBehaviour {
 				animator.Play ("Flip");
 			}
 
-			else
+			else if (targetType == 2)
 			{
 				animator.Play ("Flip2");
 			}
+
+			else if (targetType == 3)
+			{
+				animator.Play ("Flip 3");
+			}
+
 			StopAllCoroutines ();
 			StartCoroutine (HideTarget ());
+			StopAllCoroutines ();
+			StartCoroutine (HideTarget ());
+
+
 
 
 		}
