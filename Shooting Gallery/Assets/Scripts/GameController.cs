@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour {
 	public Texture2D cursorTexture;
 	private Vector2 cursorHotspot;
 
-	[HideInInspector]
+	//[HideInInspector]
 	public List<TargetBehavior> targets = new List<TargetBehavior> ();
 
 	void Awake() {

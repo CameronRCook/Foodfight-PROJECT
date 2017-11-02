@@ -9,6 +9,7 @@ public class TargetBehavior : MonoBehaviour {
 	private bool activated;
 	private Vector3 originalPos;
 	public bool isBonus = false;
+	public int targetType = 1;
 
 
 	public static float moveSpeed = 1.0f; //Speed in the X axis 
@@ -48,7 +49,14 @@ public class TargetBehavior : MonoBehaviour {
 			}
 
 			beenHit = true;
-			animator.Play ("Flip");
+			if (targetType == 1) {
+				animator.Play ("Flip");
+			}
+
+			else
+			{
+				animator.Play ("Flip2");
+			}
 			StopAllCoroutines ();
 			StartCoroutine (HideTarget ());
 
