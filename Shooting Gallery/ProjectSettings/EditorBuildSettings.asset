@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exit Menu.unity
     guid: 573f9df133ab6426d8e12358d8420005
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 6be960b0a07d34801bd60e053b1a1b48

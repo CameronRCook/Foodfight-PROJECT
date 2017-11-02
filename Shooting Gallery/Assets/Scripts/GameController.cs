@@ -80,14 +80,30 @@ public class GameController : MonoBehaviour {
 				reloadButton.SetActive (true);
 				Time.timeScale = 0.0f;
 			} else {
-				Time.timeScale - 0.0f;
+				StopCoroutine ("SpawnTargets");
+				timeText.color = Color.black;
+				timeLeft = 0;
+				Time.timeScale = 0.0f;
+				iTween.ValueTo (gameObject, iTween.Hash (
+					"from", timeLeft, 
+					"to", 0,
+					"time", timeLeft,
+					"onupdatetarget", gameObject, 
+					"onupdate", "tweenUpdate", 
+					"oncomplete", "GameComplete"));
+				timeText.text = "GAME OVER";
+				Debug.Log (timeLeft);
 			}
 		}
 	}
 
 	public void ReloadAmmo() {
 		ammo += pizzaSize;
+		score -= pizzaCost;
+
+		ScoreText.text = "Score: " + score.ToString ();
 		AmmoText.text = "Slices Left: " + ammo.ToString ();
+
 		reloadButton.SetActive (false);
 		Time.timeScale = 1.0f;
 	}
@@ -95,10 +111,15 @@ public class GameController : MonoBehaviour {
 	void GameComplete () {
 		StopCoroutine ("SpawnTargets");
 		timeText.color = Color.black;
+	
 		timeText.text = "GAME OVER";
 	}
 
 	void tweenUpdate (float newValue) {
+		if (timeLeft == 0) {
+			return;
+		}
+
 		timeLeft = newValue;
 		if(timeLeft > 10) {
 			timeText.text = timeLeft.ToString ("#");
@@ -134,6 +155,12 @@ public class GameController : MonoBehaviour {
 		Debug.DrawLine (ray.origin, hit.point);
 		if(Input.GetMouseButtonDown(0) && live && ammo >= 1) {
 			DecreaseAmmo ();
+		}
+	}
+
+	void LateUpdate() {
+		if(timeLeft == 0) {
+			timeText.text = "GAME OVER";
 		}
 	}
 }
