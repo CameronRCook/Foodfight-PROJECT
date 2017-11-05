@@ -19,11 +19,19 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 2560
+<<<<<<< HEAD
     height: 1342
   m_MinSize: {x: 917, y: 563}
   m_MaxSize: {x: 22012, y: 14042}
   vertical: 1
   controlID: 3753
+=======
+    height: 1265
+  m_MinSize: {x: 917, y: 563}
+  m_MaxSize: {x: 22012, y: 14042}
+  vertical: 1
+  controlID: 10769
+>>>>>>> Sam-Branch
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -47,9 +55,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 559
     width: 1375
     height: 530
+=======
+    y: 533
+    width: 1375
+    height: 498
+>>>>>>> Sam-Branch
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
@@ -58,10 +72,17 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -228
     m_HBaseRangeMax: 228
     m_VBaseRangeMin: -128.25
     m_VBaseRangeMax: 128.25
+=======
+    m_HBaseRangeMin: -213.77779
+    m_HBaseRangeMax: 213.77779
+    m_VBaseRangeMin: -120.25
+    m_VBaseRangeMax: 120.25
+>>>>>>> Sam-Branch
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -79,9 +100,15 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 1375
+<<<<<<< HEAD
       height: 513
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 687.5, y: 256.5}
+=======
+      height: 481
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 687.5, y: 240.5}
+>>>>>>> Sam-Branch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -89,14 +116,24 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -343.75
+<<<<<<< HEAD
       y: -128.25
       width: 687.5
       height: 256.5
+=======
+      y: -120.25
+      width: 687.5
+      height: 240.5
+>>>>>>> Sam-Branch
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 2750, y: 1060}
+=======
+  m_LastWindowPixelSize: {x: 2750, y: 996}
+>>>>>>> Sam-Branch
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -121,11 +158,19 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 2560
+<<<<<<< HEAD
     height: 1016
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
   controlID: 3754
+=======
+    height: 958
+  m_MinSize: {x: 917, y: 442}
+  m_MaxSize: {x: 22012, y: 10021}
+  vertical: 0
+  controlID: 10770
+>>>>>>> Sam-Branch
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,11 +190,19 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1377
+<<<<<<< HEAD
     height: 1016
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
   controlID: 3711
+=======
+    height: 958
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
+  vertical: 1
+  controlID: 10709
+>>>>>>> Sam-Branch
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +220,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1377
+<<<<<<< HEAD
     height: 465
+=======
+    height: 439
+>>>>>>> Sam-Branch
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
@@ -201,6 +258,7 @@ MonoBehaviour:
     x: 0
     y: 94
     width: 1375
+<<<<<<< HEAD
     height: 444
   m_SceneLighting: 1
   lastFramingTime: 2176.5231209993362
@@ -211,6 +269,18 @@ MonoBehaviour:
     m_Target: {x: 456, y: 256.5, z: 0}
     speed: 2
     m_Value: {x: 456, y: 256.5, z: 0}
+=======
+    height: 418
+  m_SceneLighting: 1
+  lastFramingTime: 2771.6939910054207
+  m_2DMode: 0
+  m_isRotationLocked: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 3.02277, y: 1.2580328, z: -3.514041}
+    speed: 2
+    m_Value: {x: 3.02277, y: 1.2580328, z: -3.514041}
+>>>>>>> Sam-Branch
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -225,25 +295,31 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.03201077, y: 0.2758159, z: -0.009189007, w: -0.9606368}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.032010667, y: 0.275815, z: -0.009188977, w: -0.9606337}
   m_Size:
+<<<<<<< HEAD
     m_Target: 669.10364
     speed: 2
     m_Value: 669.10364
-  m_Ortho:
-    m_Target: 1
+=======
+    m_Target: 15.864096
     speed: 2
-    m_Value: 1
+    m_Value: 15.864096
+>>>>>>> Sam-Branch
+  m_Ortho:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
@@ -291,9 +367,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 465
     width: 1377
     height: 551
+=======
+    y: 439
+    width: 1377
+    height: 519
+>>>>>>> Sam-Branch
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -324,20 +406,22 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 561
-    width: 904
-    height: 527
+    x: 0
+    y: 533
+    width: 1375
+    height: 498
   m_ViewPositions:
     m_KeySerializationHelper:
     - {fileID: 1107352615998373710, guid: d04523e75088b4af299aa7a7877072d8, type: 2}
+    - {fileID: 1107352615998373710, guid: 17b520226c2314c5a9706a0fd6a5fda3, type: 2}
     m_ValueSerializationHelper:
-    - {x: 492.40002, y: 269.40002}
+    - {x: 775.00006, y: 278.80002}
+    - {x: 775.00006, y: 278.80002}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: d04523e75088b4af299aa7a7877072d8,
+  m_AnimatorController: {fileID: 9100000, guid: 17b520226c2314c5a9706a0fd6a5fda3,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107352615998373710, guid: d04523e75088b4af299aa7a7877072d8,
+  - m_Target: {fileID: 1107352615998373710, guid: 17b520226c2314c5a9706a0fd6a5fda3,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -367,7 +451,11 @@ MonoBehaviour:
     x: 1377
     y: 0
     width: 338
+<<<<<<< HEAD
     height: 1016
+=======
+    height: 958
+>>>>>>> Sam-Branch
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 11}
@@ -400,12 +488,21 @@ MonoBehaviour:
     x: 1379
     y: 94
     width: 334
+<<<<<<< HEAD
     height: 995
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 460bffffd844ffff0446ffffce8fffffee93ffff1afcffff00000000287b0000
+=======
+    height: 937
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 1c21fdff
+    m_LastClickedID: 0
+    m_ExpandedIDs: aa4bffff804fffff4e57ffff1c59ffffe05effff686fffffd870ffff2674ffff9675ffff6c77ffff1afcffff00000000a842000024430000
+>>>>>>> Sam-Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -445,7 +542,11 @@ MonoBehaviour:
     x: 1715
     y: 0
     width: 386
+<<<<<<< HEAD
     height: 1016
+=======
+    height: 958
+>>>>>>> Sam-Branch
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 13}
@@ -478,7 +579,11 @@ MonoBehaviour:
     x: 1717
     y: 94
     width: 382
+<<<<<<< HEAD
     height: 995
+=======
+    height: 937
+>>>>>>> Sam-Branch
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -496,14 +601,22 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: /Users/s650785/Desktop/Foodfight Team Project/Foodfight-PROJECT/Shooting
     Gallery
+=======
+  m_LastProjectPath: /Users/s116971/Desktop/Foodfight-PROJECT/Shooting Gallery
+>>>>>>> Sam-Branch
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0e260000
     m_LastClickedID: 9742
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000fc250000082600000a260000202600004e26000050260000
+=======
+    m_ExpandedIDs: 00000000f625000002260000062600000826000012260000182600001c260000262600002c260000322600006a2600007626000078260000f8440000
+>>>>>>> Sam-Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -529,9 +642,15 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 460bffff
     m_LastClickedID: 0
     m_ExpandedIDs: 00000000fc250000082600000a260000202600004e26000050260000
+=======
+    m_SelectedIDs: 1c21fdff
+    m_LastClickedID: -188132
+    m_ExpandedIDs: 1821fdff00000000f625000002260000062600000826000012260000182600001c260000262600002c260000322600006a2600007626000078260000f8440000
+>>>>>>> Sam-Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,8 +675,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 460bffff
     m_LastClickedInstanceID: -62650
+=======
+    m_SelectedInstanceIDs: 1c21fdff
+    m_LastClickedInstanceID: -188132
+>>>>>>> Sam-Branch
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300009027000054260000
     m_RenameOverlay:
@@ -603,7 +727,11 @@ MonoBehaviour:
     x: 2101
     y: 0
     width: 459
+<<<<<<< HEAD
     height: 1016
+=======
+    height: 958
+>>>>>>> Sam-Branch
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -636,7 +764,11 @@ MonoBehaviour:
     x: 2103
     y: 94
     width: 457
+<<<<<<< HEAD
     height: 995
+=======
+    height: 937
+>>>>>>> Sam-Branch
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -659,17 +791,26 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 1016
     width: 2560
     height: 326
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
   m_ActualView: {fileID: 18}
+=======
+    y: 958
+    width: 2560
+    height: 307
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 17}
+>>>>>>> Sam-Branch
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -693,9 +834,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 1108
-    width: 1552
-    height: 306
+    y: 1052
+    width: 2560
+    height: 286
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
 --- !u!114 &18
@@ -721,6 +862,12 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 1110
     width: 2560
     height: 305
+=======
+    y: 1052
+    width: 2560
+    height: 286
+>>>>>>> Sam-Branch

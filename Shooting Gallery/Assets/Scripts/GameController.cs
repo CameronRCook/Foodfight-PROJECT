@@ -27,11 +27,15 @@ public class GameController : MonoBehaviour {
 	public Texture2D cursorTexture;
 	private Vector2 cursorHotspot;
 
+<<<<<<< HEAD
 	private bool live = false;
 
 	public GameObject reloadButton;
 
 	[HideInInspector]
+=======
+	//[HideInInspector]
+>>>>>>> Sam-Branch
 	public List<TargetBehavior> targets = new List<TargetBehavior> ();
 
 	void Awake() {
@@ -162,5 +166,10 @@ public class GameController : MonoBehaviour {
 		if(timeLeft == 0) {
 			timeText.text = "GAME OVER";
 		}
+	}
+
+	public void IncreaseTime() 
+	{
+		timeLeft += 5;
 	}
 }

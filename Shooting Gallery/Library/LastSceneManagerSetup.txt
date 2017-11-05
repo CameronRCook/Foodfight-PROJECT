@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Game.unity
+=======
+- path: Assets/Scenes/Game 1.unity
+>>>>>>> Sam-Branch
   isLoaded: 1
   isActive: 1

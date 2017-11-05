@@ -8,6 +8,8 @@ public class TargetBehavior : MonoBehaviour {
 	private GameObject parent;
 	private bool activated;
 	private Vector3 originalPos;
+	public bool isBonus = false;
+	public int targetType = 1;
 
 
 	public static float moveSpeed = 1.0f; //Speed in the X axis 
@@ -21,7 +23,6 @@ public class TargetBehavior : MonoBehaviour {
 		animator = parent.GetComponent<Animator> ();
 		//ShowTarget ();
 		originalPos = parent.transform.position;
-
 
 	}
 
@@ -37,13 +38,44 @@ public class TargetBehavior : MonoBehaviour {
 	}
 		
 	//The object must have a collider for the following to work.
+<<<<<<< HEAD
 	void OnMouseDown() {
 		if(!beenHit && activated) {
+=======
+	void OnMouseDown(){
+		if(!beenHit && activated) 
+		{
+>>>>>>> Sam-Branch
 			GameController._instance.IncreaseScore ();
+
+			if (isBonus == true) 
+			{
+				GameController._instance.IncreaseTime();
+			}
+
 			beenHit = true;
-			animator.Play ("Flip");
+			if (targetType == 1) {
+				animator.Play ("Flip");
+			}
+
+			else if (targetType == 2)
+			{
+				animator.Play ("Flip2");
+			}
+
+			else if (targetType == 3)
+			{
+				animator.Play ("Flip 3");
+			}
+
 			StopAllCoroutines ();
 			StartCoroutine (HideTarget ());
+			StopAllCoroutines ();
+			StartCoroutine (HideTarget ());
+
+
+
+
 		}
 	}
 
